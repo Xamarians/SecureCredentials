@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SecureCredentials"
+             x:Class="SecureCredentials.MainPage">
+
+    <StackLayout Padding="10">
+        <!-- Place new controls here -->
+        <Entry x:Name="usernameEntry" Placeholder="Enter Username" 
+               HorizontalOptions="FillAndExpand"
+           VerticalOptions="Center"/>
+
+        <Entry x:Name="userIdEntry" Placeholder="Enter UserId" 
+               HorizontalOptions="FillAndExpand"
+           VerticalOptions="Center"/>
+
+        <Entry x:Name="tokenEntry" Placeholder="Enter token" 
+               HorizontalOptions="FillAndExpand"
+           VerticalOptions="Center"/>
+
+        <Button Text="Store Creds" Clicked="OnStoreCredsClicked"
+            HorizontalOptions="FillAndExpand"
+           VerticalOptions="Center" BorderRadius="30" BackgroundColor="Aqua"/>
+
+        <Button Text="Get UserName" Clicked="OnGetUserNameClicked"
+            HorizontalOptions="FillAndExpand"
+           VerticalOptions="Center" BorderRadius="30" BackgroundColor="Aqua"/>
+
+        <Button Text="Get UserId" Clicked="OnGetUserIdClicked"
+            HorizontalOptions="FillAndExpand"
+           VerticalOptions="Center" BorderRadius="30" BackgroundColor="Aqua"/>
+
+        <Button Text="Get Token" Clicked="OnGetTokenClicked"
+            HorizontalOptions="FillAndExpand"
+           VerticalOptions="Center" BorderRadius="30" BackgroundColor="Aqua"/>
+    </StackLayout>
+
+</ContentPage>
